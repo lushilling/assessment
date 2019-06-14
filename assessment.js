@@ -18,7 +18,6 @@ function makeRequest(requestType, url, toSend) {
     });
 };
 
-
 function search() {
     let titleSearch;
     makeRequest("GET", `http://www.omdbapi.com/?apikey=e1fe0de4&s=${titleSearch}`).then((req) => {
@@ -28,9 +27,31 @@ function search() {
     });
 };
 
-function tableResult(){
 
-};
+
+// function appendData(data) {
+//     var mainContainer = document.getElementById("myData");
+//     for (var i = 0; i < data.length; i++) {
+//         var div = document.createElement("div");
+//         div.innerHTML = data[i].Title + ' ' + data[i].Year+ ' ' + data[i].imdbID;
+//         mainContainer.appendChild(div);
+//     }
+// }
+
+
+
+
+// function tableResult() {
+//     table = JSON.parse(this.responseText);
+//     txt += "<table border='1'>"
+//     for (x in table) {
+//         txt += "<tr><td>" + table[x].name + "</td></tr>";
+//     }
+//     txt += "</table>"
+//     document.getElementById("titleSearch").innerHTML = txt;
+// };
+
+
 
 
 //http://www.omdbapi.com/?s=superman&apikey=e1fe0de4
